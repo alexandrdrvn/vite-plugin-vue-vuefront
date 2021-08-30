@@ -1,7 +1,6 @@
 import gql from 'graphql-tag'
 
 export async function seoResolver (app, to, from, next) {
-  console.log('seo resolver')
   let toVal = to
   if(to.value) {
     toVal = to.value

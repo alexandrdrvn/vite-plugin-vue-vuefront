@@ -72,6 +72,7 @@ export const createVueFrontApp = async (App) => {
 
   await VuefrontPlugin(context, inject)
   i18n = await VuefrontI18n(context, inject)
+  context.app.use(i18n)
   inject('i18n', i18n)
   // store.app =  injectVars
   store.app.i18n = i18n
